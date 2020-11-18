@@ -3,8 +3,8 @@
 namespace Kraziegent\Laraform\Tests;
 
 use Illuminate\Database\Eloquent\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Kraziegent\Laraform\LaraformServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
