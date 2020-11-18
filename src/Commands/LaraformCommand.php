@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Kraziegent\Laraform\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaraformCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laraform';
 
     public $description = 'My command';
 

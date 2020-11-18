@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Kraziegent\Laraform\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Spatie\Skeleton\SkeletonServiceProvider;
+use Kraziegent\Laraform\LaraformServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -12,15 +12,15 @@ class TestCase extends Orchestra
     {
         parent::setUp();
 
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Spatie\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
+        // Factory::guessFactoryNamesUsing(
+        //     fn (string $modelName) => 'Kraziegent\\Laraform\\Database\\Factories\\'.class_basename($modelName).'Factory'
+        // );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            SkeletonServiceProvider::class,
+            LaraformServiceProvider::class,
         ];
     }
 
@@ -34,7 +34,7 @@ class TestCase extends Orchestra
         ]);
 
         /*
-        include_once __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
+        include_once __DIR__.'/../database/migrations/create_laraform_table.php.stub';
         (new \CreatePackageTable())->up();
         */
     }

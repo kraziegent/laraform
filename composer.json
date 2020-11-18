@@ -1,38 +1,41 @@
 {
-    "name": ":vendor_name/:package_name",
-    "description": ":package_description",
+    "name": "kraziegent/laraform",
+    "description": "A Dynamic form generator for Laravel using blade.",
     "keywords": [
-        ":vendor_name",
-        ":package_name"
+        "laravel",
+        "html form",
+        "blade",
+        "bootstrap",
+        "tailwind"
     ],
-    "homepage": "https://github.com/:vendor_name/:package_name",
+    "homepage": "https://github.com/kraziegent/laraform",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
+            "name": "Peter Olumolu",
+            "email": "olumolupeter@gmail.com",
             "homepage": "https://spatie.be",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "illuminate/contracts": "^8.0"
+        "illuminate/contracts": "^6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^6.0",
-        "phpunit/phpunit": "^9.3",
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^7.5|^8.4|^9.3",
         "vimeo/psalm": "^3.11"
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src",
-            "Spatie\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Kraziegent\\Laraform\\": "src",
+            "Kraziegent\\Laraform\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Kraziegent\\Laraform\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -46,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Kraziegent\\Laraform\\LaraformServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Laraform": "Kraziegent\\Laraform\\LaraformFacade"
             }
         }
     },

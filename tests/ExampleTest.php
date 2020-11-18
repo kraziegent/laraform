@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Kraziegent\Laraform\Tests;
 
 class ExampleTest extends TestCase
 {
